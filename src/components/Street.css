@@ -1,0 +1,14 @@
+/*styling for encasing of the street.
+flexbox to allow five houses side by side.
+*/
+.street {
+  display: flex;
+  /*NB:in resizing the screen, houses within street change positon to fit - no going off page. */
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between 10px;
+  padding: 130px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: center;
+}

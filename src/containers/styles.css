@@ -1,0 +1,219 @@
+/*
+style file for home and contact component.
+*/
+
+/*imported font available from google api */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+/*specific styling for button when transforming is taking place. 
+stylistic choices - color, size etc.
+*/
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
+  -webkit-transition: all 0.5s ease;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.1));
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border: none;
+  background: #10d9e0;
+  border-radius: 30px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  font-weight: 400;
+  font-size: 13px;
+  cursor: cursor;
+  margin-top: 15px;
+  color: #222222;
+}
+
+/*design for hovering over button*/
+button:hover {
+  color: #ffffff;
+  background: #222222;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2));
+}
+
+.wrapper {
+  max-width: 1335px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.wrapper a {
+  display: inline-block;
+  margin: 5px;
+}
+
+.wrapper a:first-child {
+  margin-left: 0;
+}
+
+.slider-wrapper {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100vh;
+  /*ensure background image covers full slide*/
+  background-size: cover !important;
+}
+
+.slide::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.9))
+  );
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+  bottom: 0;
+  left: 0;
+}
+
+.previousButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  /*arrows for buttons to left and right of slide*/
+  background: url("https://cdn.clipart.email/600acd5d0cf71b8ca4c36e1557e7738d_simple-arrow-transparent-png-clipart-free-download-ywd_512-512.png")
+    no-repeat center center / 16px;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.previousButton:hover,
+/*hover to increase size of buttons to left and right of slide*/
+.nextButton:hover {
+  background: url("https://cdn.clipart.email/600acd5d0cf71b8ca4c36e1557e7738d_simple-arrow-transparent-png-clipart-free-download-ywd_512-512.png")
+    no-repeat center center / 20px;
+}
+
+.previousButton {
+  left: 0;
+  -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
+  transform: rotate(180deg) translateY(calc(50% + 0px));
+}
+
+.previousButton:hover {
+  left: -10px;
+}
+
+.nextButton {
+  right: 0;
+}
+
+.nextButton:hover {
+  right: -10px;
+}
+
+.slider-content {
+  text-align: center;
+}
+
+/*
+styles for multiple divs below. Styling preferences - color and margin specifications.
+*/
+
+.slider-content .inner {
+  padding: 0 70px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.slider-content .inner button {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.slider-content .inner h1 {
+  font-weight: 900;
+  margin: 0 auto;
+  max-width: 840px;
+  color: #ffffff;
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.slider-content .inner h2 {
+  font-weight: 900;
+  margin: 0 auto;
+  max-width: 840px;
+  color: #ffffff;
+  font-size: 54px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.slider-content .inner h3 {
+  font-weight: 900;
+  margin: 0 auto;
+  max-width: 840px;
+  color: #222222;
+  font-size: 44px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.slider-content .inner p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 20px auto 30px;
+  max-width: 640px;
+}
+
+.constList {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.listCon {
+  list-style-type: none;
+}
+
+.slider-content .inner li {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  margin: 20px auto 5px;
+  max-width: 640px;
+}
+
+.slider-content .inner ul {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1;
+  margin: 20px auto 5px;
+  max-width: 640px;
+  list-style-type: none;
+}

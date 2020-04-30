@@ -1,0 +1,57 @@
+{
+  "name": "zebra",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "python-shell": "^1.0.8",
+    "react": "^16.12.0",
+    "react-ajax": "^0.1.1",
+    "react-alert": "^6.0.0",
+    "react-alert-template-basic": "^1.0.0",
+    "react-animated-slider": "^2.0.0",
+    "react-animated-text": "^0.1.4",
+    "react-bootstrap": "^0.33.1",
+    "react-dom": "^16.12.0",
+    "react-flexbox-grid": "^2.1.2",
+    "react-hover": "^1.4.0",
+    "react-native": "^0.61.5",
+    "react-native-elements": "^1.2.7",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.3.0",
+    "react-scrollbar": "^0.5.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": "12.14.0"
+  }
+}

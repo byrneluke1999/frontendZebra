@@ -1,0 +1,43 @@
+.App {
+  margin-top: 15px;
+  background-color: #ffffff;
+}
+.hov {
+  color: #0068af;
+  width: fit-content;
+}
+
+.hov:hover {
+  background-color: #d3d4d8;
+  outline: none;
+  border-color: #d3d4d8;
+  box-shadow: 0 0 10px #d3d4d8;
+}
+.App .navbar-brand {
+  font-weight: bold;
+}
+
+.nav-color {
+  background-color: #ebecf1;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand > img {
+  width: 30px;
+  left: 15px;
+  background-size: contain;
+  position: relative;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
