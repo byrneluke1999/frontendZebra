@@ -1,3 +1,16 @@
+# All code for backend of final year project
+# Author: Luke Byrne - 16321730
+
+This code will solve the zebra puzzle and output the solution and the steps to arrive at the solution to the command line
+
+# DIRECTIONS FOR USE
+
+cloning this repository and running ### `npm install` will setup the React app in a local directory.
+
+running ### `npm start` after this will launch the application on the local server.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
