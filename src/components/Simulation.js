@@ -275,6 +275,7 @@ contents.
               <div className="key">
                 <h1 className="instructions-title">Key</h1>
                 <ul>
+                  <li>{content.title}</li>
                   <li>{content.attrKey}</li>
                   <li>{content.smokeKey}</li>
                   <li>{content.petKey}</li>

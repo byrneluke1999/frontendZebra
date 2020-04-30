@@ -21,13 +21,13 @@ export default function Routes() {
       <Route
         path="/FrontEnd"
         component={() =>
-          (window.location = "https://github.com/byrneluke1999/react-zebra")
+          (window.location = "https://github.com/byrneluke1999/frontendZebra")
         }
       />
       <Route
         path="/BackEnd"
         component={() =>
-          (window.location = "https://github.com/byrneluke1999/FYP_Zebra")
+          (window.location = "https://github.com/byrneluke1999/backendZebra")
         }
       />
     </Switch>

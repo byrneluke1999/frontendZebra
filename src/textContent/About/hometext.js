@@ -32,20 +32,19 @@ const content = {
   rule14: `14. The Japanese smokes Parliaments.`,
   rule15: `15. The Norwegian lives next to the blue house.`,
 
-  about: `This web application serves as a portal for understanding The Zebra Puzzle. As part of my Final Year Project I developed a backend and frontend
-   application that solves The Zebra Puzzle. This is the frontend part of the application, retrieving the data that solves the puzzle from the backend and
-   displaying it in a presentable manner. `,
+  about: `This web application serves as a portal for understanding the zebra uzzle. As part of my Final Year Project I developed a backend and frontend
+   application that solves the zebra puzzle, as it is specified on Wikapedia. The backend solves the puzzle, parses the required data and stores it in a JSON 
+   format, which the frontend makes use of by running a simulation demonstrating how a solution is reached. `,
   about2:
-    "The Zebra Puzzle: The benchmark of solving constraint satisfaction problems.",
+    "The Zebra Puzzle: The benchmark in solving constraint satisfaction problems.",
   about3: `After spending time understanding constraint satisfaction problems, I designed this frontend application to visualise how The Zebra Puzzle
   is solved. Clicking the button below (or the 'Simulation' tab) will direct you to the simulation, where there are instructions on how it works. For more
   information on The Zebra Puzzle, what it is, the constraints for example use the arrows to the left and right of the screen to move to the next slide.`,
 
-  puzzleDesc: `The Zebra Puzzle is a Constraint Satisfaction Problem. The idea is that there are five houses, aligned one by one, each with five attributes:
+  puzzleDesc: `The Zebra Puzzle is a constraint satisfaction problem. The idea is that there are five houses, aligned one by one, each with five attributes:
    Pet, Drink, Colour, Smoke, Nationality. Each attribute has five possible values, but an attribute may only contain one of those values. The puzzle has fifteen
    constraints which limit the values that attributes can contain. A solution is arrived at when every attribute is assigned a value satisfying the constraints. Those
-    constraints can be seen on the next slide. Note that each rule contains a snippet of information, concerning the attributes listed.
-    `,
+    constraints can be seen on the next slide. Note that each rule contains a snippet of information, concerning the attributes listed.`,
 
   //steps to understanding how simulation works
   step1: `Below is a button to commence the simulation and a titlebar with information on the current constraint.`,
@@ -56,17 +55,18 @@ const content = {
   at that constraint application.`,
   step5: `When the button appears disabled the simulation has ended and scrolling to the bottom of the page will show the solution.`,
   step6: `Whenever branching occurs, ie. there are multiple possibilities for the assignment of values to attributes, the constraint title bar
-  will be labelled with the constraint and some number. Scrolling back you can compare the possibile assignment of values to attributes.`,
-  email: `If for some reason, this app is not functioning as it should (the server hosting the backend may have switched off), please contact
+  will be labelled with the constraint and some number referring to how many branches there are at this application of a constraint. Scrolling 
+  back up the page you can compare the possibile assignment of values to attributes.`,
+  email: `If for some reason, this app is not functioning as it should (the server hosting the backend may have switched off accidentally), please contact
   me at byrnel38@tcd.ie`,
 
   linkText: `Below the github repositories with the code for the front- & back ends are linked.`,
 
   //constraint ordering
-  orderingC: `The ordering of constraints is integral to reducing the run time of the program solving this problem. Linked are two simulations, 
-  which run with a different order of constraints. The Non Optimal Ordering is the default ordering, as they are seen on the previous slide. The optimal
-   ordering was found through testing (detaiing in the report accompanying this project): it is [1,9,10,15,6,2,4,8,12,3,5,13,14,7,11]. Comparing 
-  the two simulations, the drastic difference in branching can be seen.`,
+  orderingC: `The ordering of constraints is integral in reducing the run time of the program solving this problem and in reducing the time spent finding
+  a solution. Two simulations can be foudn on this website, which solve the puzzle according to two different orders of constraints. The onn optimal ordering is the default ordering, as they are seen on the previous slide. The optimal
+  ordering was found through testing (detaiing in the report accompanying this project): it is [1,9,10,15,6,2,4,8,12,3,5,13,14,7,11]. Comparing 
+  the two simulations, the drastic difference in time taken to solve the puzzle can be seen. `,
 
   //attribute-vals
   petVals: `Pet: zebra, dog, fox, horse, snail`,
@@ -76,6 +76,7 @@ const content = {
   natVals: `Nationality: English, Spanish, Ukranian, Japanese, Norwegian`,
 
   //key
+  title: `Abbreviated attribute values stand for the following:`,
   attrKey: `dri = drink | col = color | smo = smoke | nat = nationality | pet = pet`,
   smokeKey: `koo = kools | luc = Lucky Strike | che = Chesterfields | old = Old Gold | par = Parliaments`,
   drinkKey: `mil = milk | ora = orange juice | cof = coffee | tea = tea | wat = water`,
