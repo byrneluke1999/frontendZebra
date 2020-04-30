@@ -5,9 +5,9 @@ This code will solve the zebra puzzle and output the solution and the steps to a
 
 # DIRECTIONS FOR USE
 
-cloning this repository and running ### `npm install` will setup the React app in a local directory.
+cloning this repository and running `npm install` will setup the React app in a local directory.
 
-running ### `npm start` after this will launch the application on the local server.
+running `npm start` after this will launch the application on the local server.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
